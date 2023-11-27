@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens Para diferentes mídias HTML5</title>
+</head>
+
+<body>
+
+    <h1>imagens dinamicas</h1>
+
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_g.png" alt="Imagem flexivel">
+    </picture>
+
+
+    <!-- Testando de outro jeito-->
+    <!-- TCom o min-width-->
+    <picture>
+        
+        <source media="(min-width:1100px )" srcset="imagens/foto_g.png" type="image/png">
+        <source media="(min-width:750px)" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_p.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzir audio</h1>
+    <audio src="midia/On the Delta - John Patitucci.mp3" controls></audio>
+
+    <h2>otra maneira</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/On the Delta - John Patitucci.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+</html>
