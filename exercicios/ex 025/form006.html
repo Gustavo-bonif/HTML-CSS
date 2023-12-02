@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 06</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        input#icor{
+
+            width: 20px;
+            height: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="cadastro.php">
+
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel">
+            <br>
+            <label for="iteste">Nível de Teste: </label>
+            <input type="range" name="teste" id="iteste" min="1" max="5" value="1">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
